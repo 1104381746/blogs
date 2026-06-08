@@ -1,4 +1,4 @@
-﻿# Superpowers：给你的 AI 编程助手装上"方法论引擎"
+# Superpowers：给你的 AI 编程助手装上"方法论引擎"
 
 > 适用版本：Superpowers v5.1.0+ | 最后更新：2026-06-05 | 这是一个 218k stars 的开源项目
 

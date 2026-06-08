@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "superpowers/superpowers-完整指南.md",
-                "mode": "source",
+                "file": "mcp/superpowers/superpowers-完整指南.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -94,8 +94,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "欢迎.md",
-                "collapseAll": false,
+                "file": "mcp/superpowers/superpowers-完整指南.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "欢迎 的反向链接列表"
+              "title": "superpowers-完整指南 的反向链接列表"
             }
           },
           {
@@ -181,18 +181,19 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "publish:发布更改": false
     }
   },
-  "active": "9acdb51905eb12a6",
+  "active": "ccdb0f6c5f7dc2eb",
   "lastOpenFiles": [
     "欢迎.md",
     "Obsidian.md",
     "未命名.base",
-    "superpowers/superpowers-完整指南.md",
+    "mcp/superpowers/superpowers-完整指南.md",
     "cc-switch/blog-01-快速入门.md",
     "superpowers/test.txt",
-    "superpowers",
+    "mcp/superpowers",
     "mcp",
     "cc-switch/blog-05-常见问题.md",
     "cc-switch",
