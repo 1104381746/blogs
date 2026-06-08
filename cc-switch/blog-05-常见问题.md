@@ -1,0 +1,202 @@
+# CC Switch 常见问题解答 —— 配置文件、FAQ、深度链接与环境变量
+
+> 适用版本：CC Switch v3.16.0+ | 最后更新：2026-06-05
+
+这篇博客涵盖 CC Switch 的数据存储结构、常见问题的排查方法、深度链接协议的使用以及环境变量冲突的处理。
+
+## 配置文件说明
+
+### CC Switch 数据存储
+
+默认位置：`~/.cc-switch/`（可在设置中自定义）。
+
+包含以下核心文件：
+
+**`cc-switch.db`** SQLite 数据库，存储供应商配置、供应商端点、MCP 服务器、提示词预设、技能安装状态、技能仓库、代理配置、代理请求日志、供应商健康状态、模型定价、应用设置。
+
+**`settings.json`** 设备级设置（语言、主题、窗口行为、各工具配置目录等），不会跨设备同步。
+
+### 各 CLI 工具配置文件
+
+**Claude Code**（`~/.claude/`）：
+- 供应商配置存放在 `~/.claude.json` 的 `providers` 数组中
+- MCP 服务器配置存放在 `~/.claude.json` 的 `mcpServers`
+
+**Codex**（`~/.codex/`）：
+- `auth.json`：API 密钥
+- `config.toml`：模型、端点、MCP 配置
+
+**Gemini CLI**（`~/.gemini/`）：
+- `settings.json`：模型、MCP、自定义提示
+- 供应商配置通过设置修改
+
+**OpenCode**（`~/.config/opencode/`）：`opencode.json` + `AGENTS.md` + `skills/`
+
+**Hermes**（`~/.hermes/`）：`config.yaml` + `.env` + `SOUL.md` + `memories/` + `skills/` + `state.db` + `sessions/`。CC Switch 将 MCP 写入 `mcp_servers`，供应商条目写入 `custom_providers`，切换时更新 `model.provider` / `model.default`。
+
+**OpenClaw**（`~/.openclaw/`）：`openclaw.json`（JSON5 格式，含 `models.providers`、`env`、`agents.defaults`、`tools`）+ `skills/`
+
+### 数据管理
+
+**导出**：设置 → 高级 → 数据管理 → 导出，生成 `cc-switch-export-{时间戳}.sql`，包含所有供应商、MCP、Prompts、应用设置。**不包含**用量日志（数据量大）和设备级设置。
+
+**导入**：同样路径选择备份文件恢复，会覆盖现有数据。建议导入前先导出当前配置。
+
+**重置**：设置 → 高级 → 重置 CC Switch，会删除所有数据并恢复到初始状态（不可逆，重置前建议导出）。
+
+### 云同步（WebDAV）
+
+设置 → 高级 → WebDAV，填入服务器地址、用户名、密码和同步路径。支持手动上传/下载或自动同步，自动同步在启动、切换应用、切换供应商时触发。同步内容包含数据库和技能文件夹，设备级设置不参与同步。
+
+### OAuth 认证中心（Beta）
+
+管理 ChatGPT（Codex OAuth）和 GitHub Copilot 的 OAuth 登录状态，支持多账号登录、设为默认、移除账号、注销所有账号。
+
+## FAQ 常见问题
+
+### 安装问题
+
+**Q：下载速度慢怎么办？**
+A：使用镜像源或代理下载，GitHub Releases 国内可能较慢。
+
+**Q：杀毒软件报毒？**
+A：CC Switch 为开源项目，源码可查。如担心安全，可自行从源码构建。
+
+**Q：之前的数据还在吗？**
+A：覆盖安装不会丢失数据（数据存储在 `~/.cc-switch/`）。如需彻底重装，先导出备份再卸载。
+
+### 供应商问题
+
+**Q：添加供应商后无法使用？**
+A：检查 API Key 是否正确、端点地址是否可达、网络是否正常。点击卡片上的「测试」按钮验证连通性。
+
+**Q：切换供应商后不生效？**
+A：Claude / Gemini 即时生效，Codex 需重启终端。如仍未生效，检查配置文件是否被其他工具覆盖。
+
+**Q：官方订阅供应商不显示配额？**
+A：确认供应商是官方订阅类、处于启用状态、网络可访问官方接口。OAuth 卡片的 Token 过期时需在 OAuth 认证中心重新登录。
+
+### 代理问题
+
+**Q：代理启动失败？**
+A：检查端口 15721 是否被占用，可更换端口。检查日志文件获取详细错误。
+
+**Q：启用应用接管后请求失败？**
+A：确认代理服务正在运行且端口正确。检查故障转移队列中至少有一个可用供应商。检查网络能访问配置的供应商端点。
+
+**Q：如何让代理作为系统服务运行？**
+A：使用 PM2 或系统自带的 service 管理器（systemd / launchd）。CC Switch 本身不内置进程守护功能。
+
+### 故障转移问题
+
+**Q：启用故障转移后请求卡住？**
+A：检查熔断器配置，确认超时时间合理（建议 10-30s）。检查队列中供应商是否都可用。检查日志查看当前卡在哪个供应商。
+
+**Q：高可用模式下部分供应商负载不均？**
+A：故障转移按顺序尝试，不是负载均衡。如需负载均衡，请使用外部网关（如 OpenRouter）。
+
+### 数据问题
+
+**Q：如何迁移到另一台电脑？**
+A：旧电脑导出 → 新电脑安装 CC Switch → 导入备份文件。WebDAV 用户可直接在目标设备同步。
+
+**Q：不小心删除了配置？**
+A：检查 `~/.cc-switch/` 目录是否存在，从备份恢复或从之前导出的配置导入。
+
+**Q：WebDAV 同步冲突？**
+A：CC Switch 使用最后写入覆盖策略。建议不要同时在多台设备上修改配置。
+
+### 配额与余额
+
+**Q：使用中转服务怎么查看余额？**
+A：供应商卡片 → 用量查询 → 启用开关 → 选择内置模板或自定义脚本。
+
+**Q：为什么官方订阅类供应商没有用量查询按钮？**
+A：官方订阅会自动显示配额，不需要手动配置。
+
+### Codex OAuth 反向代理
+
+**Q：什么是 Codex OAuth 反向代理？**
+A：用 ChatGPT 账号在 Claude Code 中复用 Codex 服务。在 Claude 供应商列表中添加「Codex (ChatGPT Plus/Pro)」预设，通过 Device Code 流程登录。
+
+**Q：登录失败怎么办？**
+A：检查网络能访问 auth.openai.com 和 chatgpt.com。验证码有效期约 15 分钟，超时点击重试。OAuth 认证中心可管理多账号。
+
+### 获取帮助
+
+提交 Issue 时访问 [GitHub Issues](https://github.com/farion1231/cc-switch/issues)，提供以下信息：操作系统和版本、CC Switch 版本、问题描述和复现步骤、错误信息。日志文件位置：macOS/Linux 为 `~/.cc-switch/logs/`，Windows 为 `%APPDATA%\cc-switch\logs\`。
+
+## 深度链接协议
+
+CC Switch 支持 `ccswitch://` 深度链接协议，可以通过链接一键导入配置。
+
+### V1 协议格式
+
+```
+ccswitch://v1/import/{base64编码的JSON}
+```
+
+### 在线生成工具
+
+可使用官方在线工具生成深度链接：https://farion1231.github.io/cc-switch/deplink.html
+
+### 支持导入的内容
+
+**供应商参数**：`endpoint`（支持逗号分隔多 URL）、`apiKey`、`homepage`、`model`、`haikuModel/sonnetModel/opusModel`（仅 Claude）、`notes`、`icon`、`config`（Base64）、`configFormat`（json/toml）、`configUrl`、`enabled`、用量查询参数（`usageScript`、`usageEnabled`、`usageApiKey`、`usageBaseUrl`、`usageAccessToken`、`usageUserId`、`usageAutoInterval`）
+
+**提示词参数**：`content`（必填）、`description`、`enabled`
+
+**MCP 参数**：`apps`（逗号分隔）、`config`（JSON 格式，必填）、`enabled`
+
+**Skill 参数**：`repo`（必填，格式 owner/name）、`directory`、`branch`
+
+### 使用流程
+
+1. 好友或文档提供深度链接
+2. 点击链接（浏览器或支持协议的客户端）
+3. 系统自动打开 CC Switch
+4. 预览配置内容
+5. 点击「确认导入」
+6. 配置自动导入并可用
+
+### 安全注意
+
+深度链接可编码敏感信息（如 API Key），分享时注意安全。建议仅分享必要参数，不要包含 API Key。接收方导入前可预览配置内容确认安全。
+
+## 环境变量冲突
+
+CC Switch 会自动检测系统环境变量与应用配置的冲突，避免配置被意外覆盖。检测的变量包括 `ANTHROPIC_API_KEY`、`ANTHROPIC_BASE_URL`、`OPENAI_API_KEY`、`GEMINI_API_KEY` 等。
+
+### 冲突警告
+
+切换供应商时，如检测到系统环境变量与应用中存在同名的变量，CC Switch 会弹出提示「环境变量冲突 — 已检测到以下环境变量与 CC Switch 配置冲突」。
+
+### 处理冲突
+
+**一键处理**：在冲突提示框中选择冲突变量，点击「自动处理」或手动逐个选择保留配置值或系统值。
+
+**手动处理**：在设置 → 环境变量冲突管理面板中查看和管理所有冲突变量。支持按应用过滤（Claude / Codex / Gemini）。
+
+### 手动处理步骤
+
+1. 打开设置 → 环境变量冲突管理
+2. 查看冲突变量列表
+3. 勾选要删除的环境变量 → 点击「删除选中」→ 确认删除
+4. 删除前 CC Switch 会自动备份到 `~/.cc-switch/env-backups/`（JSON 格式，含变量名、值、来源）
+5. 如需恢复，在备份目录中找到对应备份文件手动还原
+
+### 为什么会冲突
+
+环境变量的优先级高于 CC Switch 的配置。如果 `~/.bashrc` / `~/.zshrc`（macOS/Linux）或系统环境变量（Windows）中设置了 `ANTHROPIC_API_KEY`，即使 CC Switch 配置了其他值，Claude Code 实际使用的也是环境变量的值。
+
+### 最佳实践
+
+**macOS/Linux**：编辑 `~/.zshrc`、`~/.bashrc`，删除或注释相关的 `export` 语句，重新加载 `source ~/.zshrc`。
+
+**Windows**：系统设置 → 高级系统设置 → 环境变量 → 删除对应的用户/系统变量。
+
+**深度清理**：检查全局配置文件 `/etc/environment`、`/etc/profile`、`/etc/bash.bashrc`。
+
+3. 删除前确认已备份（自动备份在 `~/.cc-switch/env-backups/`）
+
+> **成功标志**：所有问题排查完成，深度链接导入正常，无环境变量冲突警告。

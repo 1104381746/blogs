@@ -1,0 +1,126 @@
+---
+title: blog-01-快速入门
+slug: blog-01
+halo:
+  site: 'https://blogs.luhg.cn'
+  name: c023fdea-cb47-40a6-9594-f7561195f2b4
+  publish: true
+  images: []
+---
+# CC Switch 快速入门 —— 五分钟搞定多供应商切换
+
+> 适用版本：CC Switch v3.16.0+ | 最后更新：2026-06-05
+
+如果你在用 Claude Code、Codex、Gemini CLI 等 AI 编程工具，很可能遇到过这种场景：今天用官方 Anthropic，明天想试试 DeepSeek，后天又切回 GPT——每次都要手改配置文件，格式还各不相同。CC Switch 就是为了解决这个痛点而生的。
+
+## 什么是 CC Switch
+
+CC Switch 是一款跨平台桌面应用，专为 AI 开发者设计。它用一个统一界面管理 Claude Code、Claude Desktop、Codex、Gemini CLI、OpenCode、OpenClaw 和 Hermes 这七款工具的供应商配置，支持一键切换，无需手动编辑任何配置文件。
+
+**它解决的核心问题：**
+
+| 痛点 | CC Switch 的解法 |
+|------|-----------------|
+| 多供应商切换麻烦 | 点一下按钮，配置自动写入 |
+| 各工具配置格式不同 | 统一管理，差异底层消化 |
+| 无法监控 API 用量 | 内置用量查询 + 配额展示 |
+| 单一供应商不可用 | 故障转移 + 熔断器自动处理 |
+
+## 安装 CC Switch
+
+### 系统要求
+
+| 系统 | 最低版本 | 架构 |
+|------|---------|------|
+| Windows | Windows 10+ | x64 |
+| macOS | 12 (Monterey) + | Intel / Apple Silicon |
+| Linux | Ubuntu 22.04+ / Debian 11+ / Fedora 34+ | x64 / ARM64 |
+
+### 安装步骤
+
+**Windows 用户：**
+1. 访问 [GitHub Releases 页面](https://github.com/farion1231/cc-switch/releases) 下载 `CC-Switch-v{版本号}-Windows.msi`
+2. 双击运行安装程序
+3. 如果安装后没反应，右键安装包 → 属性 → 勾选"解除锁定"
+4. 也可下载绿色版（Portable zip），解压后直接运行 `CC-Switch.exe`
+
+**macOS 用户（推荐 Homebrew）：**
+
+```bash
+brew tap farion1231/ccswitch
+brew install --cask cc-switch
+```
+
+或者直接下载 DMG 拖入应用程序文件夹。CC Switch macOS 版已通过 Apple 公证，可直接打开。
+
+**Linux 用户：**
+- ArchLinux: `paru -S cc-switch-bin`
+- Debian/Ubuntu: 下载 `.deb` 后用 `sudo dpkg -i` 安装
+- 也可使用通用的 AppImage 版本
+
+### 前置要求
+
+CC Switch 管理的 CLI 工具需要 Node.js 环境（推荐 18 LTS 或更高版本）。各 CLI 工具的安装：
+
+```bash
+# Claude Code
+npm install -g @anthropic-ai/claude-code
+# Codex
+npm install -g @openai/codex
+# Gemini CLI
+npm install -g @google/gemini-cli
+```
+
+> 国内用户下载慢请在命令后加 `--registry=https://registry.npmmirror.com`
+
+### 验证安装
+
+启动 CC Switch 后，确认三点：
+1. 应用窗口正常显示
+2. 系统托盘出现 CC Switch 图标
+3. 应用切换器中能看到已启用的受管工具
+
+## 首次配置：5 分钟上手
+
+### 第一步：添加你的第一个供应商
+1. 点击主界面右上角的 **+** 按钮
+2. 在「预设」下拉框中选择你的供应商（如 DeepSeek、智谱 GLM、PackyCode 等）
+3. 预设会自动填充端点地址，你只需填写 **API Key**
+4. 点击「添加」
+
+### 第二步：启用供应商
+
+添加完成后，供应商以卡片形式出现在列表中。点击卡片的「启用」按钮，CC Switch 会自动将配置写入对应工具的配置文件。
+
+### 第三步：验证
+
+启动对应 CLI 工具，输入一个简单测试问题。如果 AI 能正常回复，说明配置成功！
+
+## 切换后的生效时间
+
+| 应用 | 生效方式 |
+|------|---------|
+| Claude Code | 即时生效（支持热重载） |
+| Codex | 需关闭并重启终端 |
+| Gemini CLI | 即时生效 |
+| OpenCode / OpenClaw | 需重启终端 |
+
+## 个性化设置
+
+打开设置（快捷键 `Cmd/Ctrl + ,`），你可以：
+- **语言**：简体中文 / 繁体中文 / English / 日本語
+- **主题**：跟随系统 / 浅色 / 深色
+- **窗口行为**：开机自启、关闭时最小化到托盘
+- **轻量模式**：退出到托盘时销毁主窗口，空闲占用接近零
+- **应用可见性**：选择在切换器中显示哪些应用
+- **云同步（WebDAV）**：通过坚果云、Nextcloud 等在多设备间同步配置
+
+## 下一步
+
+完成基础配置后，建议继续探索：
+- **供应商管理** —— 配置多个供应商方便切换、用量查询
+- **MCP 服务器** —— 扩展 AI 工具的能力
+- **系统提示词** —— 自定义 AI 行为
+- **代理服务** —— 监控用量和自动故障转移
+
+> **成功标志**：CLI 工具能正常回复对话，CC Switch 供应商卡片显示蓝色"当前启用"边框。

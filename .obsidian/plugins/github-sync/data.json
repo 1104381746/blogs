@@ -1,0 +1,9 @@
+{
+  "remoteURL": "https://github.com/1104381746/my-blogs.git",
+  "gitLocation": "",
+  "syncinterval": 0,
+  "isSyncOnLoad": false,
+  "checkStatusOnLoad": true,
+  "noticeLevel": "ALL",
+  "showSyncSuccessNotice": true
+}

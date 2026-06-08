@@ -1,0 +1,149 @@
+# CC Switch 扩展功能深度解析 —— MCP、Prompts、Skills 与更多
+
+> 适用版本：CC Switch v3.16.0+ | 最后更新：2026-06-05
+
+如果说供应商管理是 CC Switch 的骨架，那扩展功能就是它的肌肉和神经。这篇博客逐一拆解 MCP 服务器管理、Prompts 提示词管理、Skills 技能管理、会话管理器和 OpenClaw 工作区文件。
+
+## MCP 服务器管理（Model Context Protocol）
+
+MCP 协议让 AI 工具能够访问外部数据源和工具——文件系统、数据库、网络请求、外部 API。CC Switch 提供统一的管理界面。
+
+### 打开 MCP 面板
+
+在应用切换到 Claude / Codex / Gemini / OpenCode / Hermes 时，点击顶部导航栏的 **MCP** 按钮。
+
+### 添加 MCP 服务器
+
+**方式一：使用预设模板**
+常见预设包括：
+- `fetch`（HTTP 请求工具）
+- `time`（时间工具）
+- `memory`（记忆存储）
+- `sequential-thinking`（思维链）
+- `context7`（文档搜索）
+
+**方式二：自定义配置**
+选择传输类型：
+- **stdio**：最常用，启动本地进程通信。需填写命令（如 `uvx`、`npx`）和参数
+- **http**：通过 HTTP 与远程服务器通信
+- **sse**：通过 Server-Sent Events 支持实时推送
+
+### 应用绑定
+
+每个 MCP 服务器可以独立控制同步到哪些应用：
+
+| 开关 | 写入的配置文件 |
+|------|---------------|
+| Claude | `~/.claude.json` 的 `mcpServers` |
+| Codex | `~/.codex/config.toml` 的 `[mcp_servers]` |
+| Gemini | `~/.gemini/settings.json` 的 `mcpServers` |
+| OpenCode | `~/.config/opencode/opencode.json` 的 `mcp` |
+| Hermes | `~/.hermes/config.yaml` 的 `mcp_servers` |
+
+注意：OpenClaw 和 Claude Desktop 暂不支持 CC Switch 的 MCP 同步。
+
+### 导入现有配置
+
+如果你已在 CLI 工具中配置了 MCP 服务器，可以直接导入到 CC Switch 统一管理。
+
+## Prompts 提示词管理
+
+Prompts 功能让你创建、管理和快速切换系统提示词预设，影响 AI 的行为和回复风格。
+
+### 打开 Prompts 面板
+
+切换到 Claude / Codex / Gemini / OpenCode 后，点击 **Prompts** 按钮。
+
+### 创建预设
+
+1. 点击 **+** 按钮
+2. 输入预设名称
+3. 在 Markdown 编辑器中编写提示词（支持语法高亮和实时预览）
+4. 点击「保存」
+
+### 激活预设
+
+点击预设的开关按钮即可激活。同一时间只能激活一个预设，激活新预设时旧的自动停用。
+
+激活后提示词写入对应配置文件：
+- Claude → `~/.claude/CLAUDE.md`
+- Codex → `~/.codex/AGENTS.md`
+- Gemini → `~/.gemini/GEMINI.md`
+- OpenCode → `~/.config/opencode/AGENTS.md`
+
+### 智能回填
+
+如果你在 CLI 中直接修改了 `CLAUDE.md` 等文件，切换预设前 CC Switch 会自动将手动修改的内容保存回当前预设，避免丢失。回填在以下时机触发：
+
+- 切换到不同的预设时
+- 编辑当前预设时（从 live 文件读取最新内容）
+- 首次启动时（自动导入现有 live 文件内容）
+
+### 跨应用使用
+
+Prompts 按应用分开管理，同一个提示词需要在不同应用分别创建。
+
+## Skills 技能管理
+
+Skills 是可复用的能力扩展，让 AI 工具获得特定领域的专业能力。支持 Claude Code、Codex、Gemini CLI、OpenCode、Hermes 五种应用。
+
+### 发现技能
+
+CC Switch 预配置了技能仓库：Anthropic 官方技能、ComposioHQ 社区维护、社区精选。支持按名称和描述搜索，按安装状态过滤。
+
+你也可以添加**自定义仓库**：填写 GitHub Owner、Name、Branch、Subdirectory，CC Switch 会自动扫描该仓库下的技能。
+
+### 安装技能
+
+点击技能卡片的「安装」按钮，技能文件夹（包含 README.md、prompt.md、tools/ 等）会被安装到对应应用目录：`~/.claude/skills/`、`~/.codex/skills/` 等。
+
+### 技能更新（v3.13.0+）
+
+CC Switch 基于 **SHA-256 内容哈希**检测远端仓库是否有新内容。有更新的技能卡片显示更新标识，支持单项更新或顶部「全部更新」批量操作。
+
+### 仓库管理
+
+打开「仓库管理」，可以添加、删除自定义技能仓库。还集成了 **skills.sh** 公共注册表搜索，让社区 skill 的发现更方便。
+
+### 卸载与备份
+
+卸载技能前，CC Switch 会自动备份到 `~/.cc-switch/skill-backups/`，之后可通过「从备份恢复」找回。
+
+## 会话管理器
+
+会话管理器让你在一处浏览、搜索和管理所有受管 CLI 工具的对话历史。
+
+### 支持的应用
+
+| 应用 | 会话存储位置 |
+|------|-------------|
+| Claude Code | `~/.cache/claude/projects/*.jsonl` |
+| Codex | Codex 配置会话目录 |
+| OpenCode | `~/.local/share/opencode/` |
+| OpenClaw | `~/.openclaw/agents/<agent>/sessions/*.jsonl` |
+| Gemini CLI | `~/.cache/gemini/tmp/<project_hash>/chats/` |
+| Hermes | `~/.hermes/state.db` 或 `~/.hermes/sessions/*.jsonl` |
+
+### 核心功能
+
+- **双栏布局**：左侧会话列表 + 右侧对话详情
+- **全文搜索**：搜索会话 ID、标题、摘要、项目目录
+- **供应商过滤**：按应用过滤会话
+- **恢复会话**：在终端中恢复之前的对话（macOS 支持在偏好终端中打开，其他平台复制命令到剪贴板）
+- **目录选择器**（Claude 会话）：恢复前可选择项目目录
+- **批量操作**：批量选择并删除多个会话
+- **对话历史**：按角色颜色区分，较长的对话提供目录导航
+
+## OpenClaw 工作区文件与每日记忆
+
+当 OpenClaw 为当前应用时，导航栏会显示工作区按钮。
+
+### 工作区文件
+
+CC Switch 管理 9 个工作区文件，存储在 `~/.openclaw/workspace/`：AGENTS.md、SOUL.md、USER.md、IDENTITY.md、TOOLS.md、MEMORY.md、HEARTBEAT.md、BOOTSTRAP.md、BOOT.md。每个文件可独立编辑，状态指示器显示文件是否已创建。
+
+### 每日记忆
+
+按日期组织的日志系统，存储在 `~/.openclaw/workspace/memory/`。支持创建今日笔记、全文搜索记忆内容、编辑和删除。
+
+> **成功标志**：MCP 服务器状态正常，Prompts 预设已激活并写入对应文件，Skills 卡片显示"已安装"状态。
