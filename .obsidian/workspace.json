@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3be83b4690d9af23",
+        "id": "4f9e48f8332c0856",
         "type": "tabs",
         "children": [
           {
-            "id": "9acdb51905eb12a6",
+            "id": "a44fa3f035c62735",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mcp/superpowers/superpowers-完整指南.md",
-                "mode": "preview",
+                "file": "blogs/ai-knowledge/01大语言模型（LLM）的基本工作原理.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "superpowers-完整指南"
+              "title": "01大语言模型（LLM）的基本工作原理"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mcp/superpowers/superpowers-完整指南.md",
+                "file": "blogs/ai-tools/mcp/superpowers/superpowers-完整指南.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,8 @@
               "title": "欢迎 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -181,44 +182,56 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false,
-      "publish:发布更改": false
+      "bases:新建数据库": false
     }
   },
-  "active": "ccdb0f6c5f7dc2eb",
+  "active": "a44fa3f035c62735",
   "lastOpenFiles": [
-    "欢迎.md",
-    "Obsidian.md",
-    "未命名.base",
-    "mcp/superpowers/superpowers-完整指南.md",
+    "blogs/ai-tools/mcp/superpowers/superpowers-完整指南.md",
+    "_fonttest_result.png",
+    "blogs/xi-tong/Node.js for windows安装指南.md",
+    "blogs/record/使用Arthas排查慢接口.md",
+    "blogs/jvm/03双亲委派机制.md",
+    "blogs/jvm/02JVM体系，类加载过程.md",
+    "blogs/jvm/01JDK，JRE和JVM是什么？三者有什么关系？.md",
+    "blogs/ai-tools/codex/desktop/01-Codex Desktop 入门指南.md",
+    "halo-blog/ji-lu/_assets/image-IDZe.png",
+    "blogs/ai-tools/codex/desktop/02-Codex Desktop 基础使用.md",
+    "blogs/ai-tools/codex/desktop/03-Codex Desktop 进阶.md",
+    "blogs/ai-tools/codex/cli/01-Codex CLI 入门指南.md",
+    "blogs/ai-tools/codex/cli/02-Codex CLI 基础使用.md",
+    "blogs/ai-tools/codex/cli/03-Codex CLI 进阶.md",
+    "blogs/ai-tools/codex/cli/04-Codex CLI  实战.md",
+    "blogs/ai-tools/claudecode/04-Claude Code 实战.md",
+    "halo-blog/aigong-ju/claudecode/Claude Code 入门指南.md",
+    "blogs/ai-tools/claudecode/03-Claude Code 进阶.md",
+    "blogs/ai-tools/claudecode/02-Claude Code 基础使用.md",
+    "blogs/ai-tools/claudecode/01-Claude Code入门指南.md",
+    "blogs/ai-tools/ccswitch/05-常见问题.md",
+    "node_modules/zod/src/v4/locales/zh-CN.ts",
+    "node_modules/zod/src/v4/locales/vi.ts",
+    "node_modules/puppeteer-core/src/bidi/BidiOverCdp.ts",
+    "node_modules/puppeteer-core/lib/puppeteer/cdp/BrowserContext.d.ts",
+    "blogs/ai-tools/ccswitch/04-代理与高可用.md",
+    "blogs/ai-tools/ccswitch/03-扩展功能.md",
+    "blogs/ai-tools/ccswitch/02-供应商管理.md",
     "cc-switch/blog-01-快速入门.md",
-    "superpowers/test.txt",
-    "mcp/superpowers",
-    "mcp",
-    "cc-switch/blog-05-常见问题.md",
-    "cc-switch",
-    "cc-switch/blog-04-代理与高可用.md",
-    "cc-switch/blog-03-扩展功能.md",
-    "cc-switch/blog-02-供应商管理.md",
-    "codex/desktop/01-install.md",
-    "claude-code/04-practice.md",
-    "claude-code/03-advanced.md",
-    "claude-code/02-basics.md",
-    "claude-code/01-install.md",
-    "codex/cli/04-codex-practice.md",
-    "claude-code",
-    "codex/cli/02-codex-basics.md",
-    "codex/cli/01-codex-install.md",
-    "codex/cli/03-codex-advanced.md",
-    "codex/desktop/03-advanced.md",
-    "codex/desktop/02-basics.md",
-    "codex/cli",
-    "codex/desktop",
-    "codex-blog/04-codex-practice.md",
-    "codex-blog/04-codex-practice.md.tmp.28304.1780563249299",
-    "codex-blog/03-codex-advanced.md",
-    "codex-blog/03-codex-advanced.md.tmp.28304.1780562891878",
-    "codex-blog/02-codex-basics.md",
-    "codex-blog/01-codex-install.md"
+    "node_modules/@puppeteer/browsers/lib/fileUtil.d.ts.map",
+    "node_modules/@puppeteer/browsers/lib/fileUtil.d.ts",
+    "node_modules/@puppeteer/browsers/lib/browser-data/browser-data.d.ts.map",
+    "node_modules/zod/v4/core/index.cjs",
+    "node_modules/zod/v4/classic/parse.cjs",
+    "node_modules/puppeteer-core/lib/puppeteer/index-browser.d.ts.map",
+    "node_modules/d3-time-format/README.md",
+    "node_modules/d3-sankey/node_modules/d3-shape/README.md",
+    "node_modules/d3-array/README.md",
+    "mermaid-export/mermaid_bpe-wordpiece-sentencepiece-xiang-jie_0.png",
+    "mermaid-export/mermaid_fixed_rag-de-he-xin_19.png",
+    "mermaid-export/mermaid_fixed_rag-de-he-xin_17.png",
+    "mermaid-export/mermaid_transformer-he-xin-zu-jian-chai-jie_57.png",
+    "mermaid-export/mermaid_transformer-he-xin-zu-jian-chai-jie_56.png",
+    "mermaid-export/mermaid_transformer-he-xin-zu-jian-chai-jie_55.png",
+    "mermaid-export/mermaid_transformer-he-xin-zu-jian-chai-jie_54.png",
+    "mermaid-export/mermaid_transformer-he-xin-zu-jian-chai-jie_53.png"
   ]
 }
