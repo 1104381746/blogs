@@ -1,0 +1,10 @@
+# Obsidian 工作区布局（频繁变动，无需备份）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian 缓存
+.obsidian/cache/
+
+# 系统文件
+Thumbs.db
+.DS_Store
