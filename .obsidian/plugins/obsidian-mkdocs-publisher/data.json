@@ -1,0 +1,125 @@
+{
+	"github": {
+		"user": "1104381746",
+		"repo": "hugo-blog",
+		"branch": "main",
+		"tokenSecret": "",
+		"automaticallyMergePR": false,
+		"dryRun": {
+			"enable": false,
+			"folderName": ""
+		},
+		"api": {
+			"tiersForApi": "Github Free/Pro/Team (default)",
+			"hostname": ""
+		},
+		"workflow": {
+			"commitMessage": "",
+			"name": ""
+		},
+		"otherRepo": [],
+		"verifiedRepo": false,
+		"rateLimit": 0
+	},
+	"upload": {
+		"behavior": "obsidian",
+		"defaultName": "",
+		"rootFolder": "content/posts",
+		"yamlFolderKey": "category",
+		"frontmatterTitle": {
+			"enable": false,
+			"key": "title"
+		},
+		"replaceTitle": [],
+		"replacePath": [
+			{
+				"regex": "^blogs/",
+				"replacement": "",
+				"type": "path"
+			}
+		],
+		"autoclean": {
+			"enable": false,
+			"excluded": [],
+			"includeAttachments": false
+		},
+		"folderNote": {
+			"enable": false,
+			"rename": "index.md",
+			"addTitle": {
+				"enable": false,
+				"key": ""
+			}
+		},
+		"metadataExtractorPath": ""
+	},
+	"conversion": {
+		"hardbreak": false,
+		"dataview": true,
+		"censorText": [],
+		"tags": {
+			"inline": true,
+			"exclude": [],
+			"fields": []
+		},
+		"links": {
+			"internal": true,
+			"unshared": false,
+			"unlink": false,
+			"wiki": true,
+			"wikiDisplayText": true,
+			"slugify": "disable",
+			"slugifyAnchor": "disable",
+			"relativePath": false,
+			"textPrefix": "/"
+		}
+	},
+	"embed": {
+		"attachments": true,
+		"overrideAttachments": [],
+		"useObsidianFolder": false,
+		"keySendFile": [],
+		"notes": false,
+		"folder": "",
+		"convertEmbedToLinks": "links",
+		"charConvert": "",
+		"bake": {
+			"textBefore": "",
+			"textAfter": ""
+		},
+		"unHandledObsidianExt": [],
+		"sendSimpleLinks": false,
+		"forcePush": false
+	},
+	"plugin": {
+		"shareKey": "share",
+		"shareAll": {
+			"enable": false,
+			"excludedFileName": ""
+		},
+		"fileMenu": true,
+		"editorMenu": true,
+		"excludedFolder": [
+			".trash",
+			".obsidian"
+		],
+		"copyLink": {
+			"enable": true,
+			"addCmd": true,
+			"links": "",
+			"removePart": [],
+			"transform": {
+				"toUri": false,
+				"slugify": "disable",
+				"applyRegex": []
+			}
+		},
+		"noticeError": true,
+		"dev": false,
+		"displayModalRepoEditing": true,
+		"migrated": true,
+		"saveTabId": true,
+		"setFrontmatterKey": "Set",
+		"noticeLength": 0
+	}
+}
