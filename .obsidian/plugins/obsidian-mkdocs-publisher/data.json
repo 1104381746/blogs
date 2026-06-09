@@ -86,7 +86,7 @@
     }
   },
   "plugin": {
-    "shareKey": "share",
+    "shareKey": "published",
     "fileMenu": true,
     "editorMenu": true,
     "excludedFolder": [
