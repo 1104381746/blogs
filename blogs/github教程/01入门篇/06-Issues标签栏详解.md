@@ -5,7 +5,7 @@ tags:
   - Issues
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 06 · Issues 标签栏详解

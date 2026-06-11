@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: IntelliJ IDEA激活教程
 tags:

@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: BPE、WordPiece、SentencePiece 详解
 tags:

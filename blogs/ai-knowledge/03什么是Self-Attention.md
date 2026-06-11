@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 什么是Self-Attention
 tags:

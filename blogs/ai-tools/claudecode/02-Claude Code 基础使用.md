@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Claude Code 基础使用：交互模式与核心命令
 tags:
   - Claude Code
   - AI工具
 categories:
-  - AI工具
+  - Claude Code
 ---
 
 # Claude Code 基础使用：交互模式与核心命令

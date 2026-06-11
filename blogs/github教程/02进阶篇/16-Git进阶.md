@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 16 · Git 进阶
 tags:
@@ -6,7 +7,7 @@ tags:
   - Git进阶
   - GitHub教程
 categories:
-  - GitHub教程
+  - 02进阶篇
 ---
 
 # 16 · Git 进阶

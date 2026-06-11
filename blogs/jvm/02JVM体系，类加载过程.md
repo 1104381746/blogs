@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: JVM体系，类加载过程
 tags:

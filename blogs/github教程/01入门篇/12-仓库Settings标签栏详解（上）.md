@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 12 · 仓库 Settings（上）
 tags:
   - Settings
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 12 · 仓库 Settings（上）

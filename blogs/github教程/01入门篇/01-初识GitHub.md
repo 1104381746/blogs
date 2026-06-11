@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 01 · 初识GitHub
 tags:
   - 入门
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 # 01 · 初识GitHub
 

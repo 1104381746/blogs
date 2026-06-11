@@ -5,7 +5,7 @@ tags:
   - Code
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 05 · Code 标签栏详解

@@ -5,7 +5,7 @@ tags:
   - Pull Requests
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 07 · Pull Requests 标签栏详解

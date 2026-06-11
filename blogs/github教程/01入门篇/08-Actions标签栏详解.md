@@ -5,7 +5,7 @@ tags:
   - Actions
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 08 · Actions 标签栏详解

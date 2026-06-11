@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Codex 实战：项目应用案例
 tags:
   - Codex CLI
   - AI工具
 categories:
-  - AI工具
+  - Codex CLI
 ---
 
 # Codex 实战：项目应用案例

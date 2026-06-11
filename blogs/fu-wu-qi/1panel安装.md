@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 1panel安装
 tags:

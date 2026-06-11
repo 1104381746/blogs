@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: RAG的核心
 tags:

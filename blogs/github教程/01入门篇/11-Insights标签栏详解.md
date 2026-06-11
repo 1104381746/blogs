@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 11 · Insights 标签栏详解
 tags:
   - Insights
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 11 · Insights 标签栏详解

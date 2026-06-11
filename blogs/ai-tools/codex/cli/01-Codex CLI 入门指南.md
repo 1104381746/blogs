@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: OpenAI Codex 入门指南：安装与环境配置
 tags:
   - Codex CLI
   - AI工具
 categories:
-  - AI工具
+  - Codex CLI
 ---
 
 # OpenAI Codex 入门指南：安装与环境配置

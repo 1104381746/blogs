@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 17 · GitHub CLI 入门
 tags:
   - CLI
   - GitHub教程
 categories:
-  - GitHub教程
+  - 02进阶篇
 ---
 
 # 17 · GitHub CLI 入门

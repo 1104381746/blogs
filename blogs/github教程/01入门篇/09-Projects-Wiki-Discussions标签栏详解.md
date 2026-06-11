@@ -7,7 +7,7 @@ tags:
   - Discussions
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 09 · Projects、Wiki、Discussions 详解

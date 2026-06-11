@@ -6,7 +6,7 @@ tags:
   - SSH
   - GitHub教程
 categories:
-  - GitHub教程
+  - 02进阶篇
 ---
 
 # 15 · Git 基础与 SSH 配置

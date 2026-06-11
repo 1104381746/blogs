@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 进阶篇：Skills、自动化与多线程协作
 tags:
   - Codex Desktop
   - AI工具
 categories:
-  - AI工具
+  - Codex Desktop
 ---
 
 # 进阶篇：Skills、自动化与多线程协作

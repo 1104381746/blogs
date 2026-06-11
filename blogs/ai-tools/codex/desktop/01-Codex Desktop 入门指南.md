@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 入门篇：Codex Desktop App 安装与初次体验
 tags:
   - Codex Desktop
   - AI工具
 categories:
-  - AI工具
+  - Codex Desktop
 ---
 
 # 入门篇：Codex Desktop App 安装与初次体验

@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Windows11专业版KMS命令激活
 tags:

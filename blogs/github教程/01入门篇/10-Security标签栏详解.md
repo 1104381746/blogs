@@ -5,7 +5,7 @@ tags:
   - Security
   - GitHub教程
 categories:
-  - GitHub教程
+  - 01入门篇
 ---
 
 # 10 · Security 标签栏详解

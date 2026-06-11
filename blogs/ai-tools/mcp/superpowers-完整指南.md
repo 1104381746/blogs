@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Superpowers：给你的 AI 编程助手装上"方法论引擎"
 tags:
@@ -6,7 +7,7 @@ tags:
   - MCP
   - AI工具
 categories:
-  - AI工具
+  - MCP
 ---
 
 # Superpowers：给你的 AI 编程助手装上"方法论引擎"

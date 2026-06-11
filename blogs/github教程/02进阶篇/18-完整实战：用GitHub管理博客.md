@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: 18 · 完整实战：用 GitHub 管理博客
 tags:
@@ -6,7 +7,7 @@ tags:
   - 博客
   - GitHub教程
 categories:
-  - GitHub教程
+  - 02进阶篇
 ---
 
 # 18 · 完整实战：用 GitHub 管理博客

@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Redis集群JedisNoReachableClusterNodeException问题排查与解决
 tags:

@@ -1,11 +1,12 @@
 ---
+date: 2026-06-11
 is_published: true
 title: Claude Code 实战：项目应用案例
 tags:
   - Claude Code
   - AI工具
 categories:
-  - AI工具
+  - Claude Code
 ---
 
 # Claude Code 实战：项目应用案例
