@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: Prompt Engineering 的常见策略及适用场景
+title: 06-Prompt Engineering 的常见策略及适用场景
 tags:
   - 提示词工程
   - AI

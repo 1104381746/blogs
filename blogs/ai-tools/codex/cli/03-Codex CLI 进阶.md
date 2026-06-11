@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: Codex 进阶：权限控制与配置
+title: 03-Codex CLI 进阶
 tags:
   - Codex CLI
   - AI工具

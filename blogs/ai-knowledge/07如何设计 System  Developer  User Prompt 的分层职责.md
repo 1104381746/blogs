@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: 如何设计 System / Developer / User Prompt 的分层职责
+title: 07-如何设计 System / Developer / User Prompt 的分层职责
 tags:
   - Prompt设计
   - AI

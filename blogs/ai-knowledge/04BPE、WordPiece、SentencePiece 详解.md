@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: BPE、WordPiece、SentencePiece 详解
+title: 04-BPE、WordPiece、SentencePiece 详解
 tags:
   - AI
   - 分词

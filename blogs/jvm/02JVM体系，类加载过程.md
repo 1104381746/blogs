@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: JVM体系，类加载过程
+title: 02-JVM体系，类加载过程
 tags:
   - Java
   - JVM

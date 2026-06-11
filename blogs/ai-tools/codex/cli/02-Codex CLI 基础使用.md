@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: Codex 基础使用：交互模式与核心命令
+title: 02-Codex CLI 基础使用
 tags:
   - Codex CLI
   - AI工具

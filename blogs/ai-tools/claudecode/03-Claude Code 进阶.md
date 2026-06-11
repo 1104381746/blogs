@@ -1,7 +1,7 @@
 ---
 date: 2026-06-09
 is_published: true
-title: Claude Code 进阶：权限控制与配置
+title: 03-Claude Code 进阶
 tags:
   - Claude Code
   - AI工具

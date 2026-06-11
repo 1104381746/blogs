@@ -1,15 +1,13 @@
 ---
 date: 2026-06-09
 is_published: true
-
-title: Claude Code 入门指南：安装与环境配置
+title: 01-Claude Code 入门指南
 tags:
   - Claude Code
   - AI工具
   - Node.js
 categories:
   - Claude Code
-
 ---
 
 # Claude Code 入门指南：安装与环境配置
