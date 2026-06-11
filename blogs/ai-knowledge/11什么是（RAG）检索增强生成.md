@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: 什么是（RAG）检索增强生成
 tags:
   - RAG

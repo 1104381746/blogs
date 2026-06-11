@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: Codex 基础使用：交互模式与核心命令
 tags:
   - Codex CLI

@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: Codex 进阶：权限控制与配置
 tags:
   - Codex CLI

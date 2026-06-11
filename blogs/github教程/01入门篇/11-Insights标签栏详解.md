@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: 11 · Insights 标签栏详解
 tags:
   - Insights

@@ -1,5 +1,5 @@
 ﻿---
-published: true
+share: true
 title: 07 · Pull Requests 标签栏详解
 tags:
   - Pull Requests

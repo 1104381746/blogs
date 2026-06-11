@@ -1,5 +1,5 @@
 ﻿---
-published: true
+share: true
 title: 15 · Git 基础与 SSH 配置
 tags:
   - Git

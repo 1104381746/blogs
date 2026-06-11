@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: 基础篇：Codex 日常使用 — 对话、代码生成与文件操作
 tags:
   - Codex Desktop

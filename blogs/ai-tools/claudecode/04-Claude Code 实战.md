@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: Claude Code 实战：项目应用案例
 tags:
   - Claude Code

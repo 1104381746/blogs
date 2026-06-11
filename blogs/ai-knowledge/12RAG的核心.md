@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: RAG的核心
 tags:
   - RAG

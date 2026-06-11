@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: 入门篇：Codex Desktop App 安装与初次体验
 tags:
   - Codex Desktop

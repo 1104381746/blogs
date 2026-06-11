@@ -1,5 +1,5 @@
 ﻿---
-published: true
+share: true
 title: 09 · Projects、Wiki、Discussions 详解
 tags:
   - Projects

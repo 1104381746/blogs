@@ -1,5 +1,5 @@
 ﻿---
-published: true
+share: true
 title: 10 · Security 标签栏详解
 tags:
   - Security

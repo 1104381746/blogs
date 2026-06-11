@@ -1,5 +1,5 @@
 ---
-published: true
+share: true
 title: JVM体系，类加载过程
 tags:
   - Java

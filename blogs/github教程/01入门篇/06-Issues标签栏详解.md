@@ -1,5 +1,5 @@
 ﻿---
-published: true
+share: true
 title: 06 · Issues 标签栏详解
 tags:
   - Issues
