@@ -1,12 +1,13 @@
 ---
-title: "如何设计 System / Developer / User Prompt 的分层职责"
-aliases:
-slug: "ru-he-she-ji-system-developer-user-prompt-de-fen-ceng-zhi-ze"
-source: https://blogs.luhg.cn/archives/ru-he-she-ji-system-developer-user-prompt-de-fen-ceng-zhi-ze
+published: true
+title: 如何设计 System / Developer / User Prompt 的分层职责
 tags:
+  - Prompt设计
+  - AI
 categories:
   - AI知识
 ---
+
 # System / Developer / User Prompt：大模型对话的“三层权限”设计
 
 > 你有没有想过：为什么有些指令模型“必须遵守”，有些只是“参考建议”？

@@ -1,9 +1,9 @@
 ---
-title: "什么是Self-Attention"
-aliases:
-slug: "shi-me-shi-self-attention"
-source: https://blogs.luhg.cn/archives/shi-me-shi-self-attention
+published: true
+title: 什么是Self-Attention
 tags:
+  - AI
+  - Self-Attention
 categories:
   - AI知识
 ---

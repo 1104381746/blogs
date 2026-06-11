@@ -1,9 +1,10 @@
 ---
-title: "Windows11专业版KMS命令激活"
-aliases:
-slug: "windows11zhuan-ye-ban-kmsming-ling-ji-huo"
-source: https://blogs.luhg.cn/archives/windows11zhuan-ye-ban-kmsming-ling-ji-huo
+published: true
+title: Windows11专业版KMS命令激活
 tags:
+  - Windows
+  - KMS
+  - 激活
 categories:
   - 系统
 ---

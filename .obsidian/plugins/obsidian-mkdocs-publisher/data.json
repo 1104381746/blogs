@@ -3,7 +3,7 @@
     "user": "1104381746",
     "repo": "hugo-blog",
     "branch": "main",
-    "automaticallyMergePR": true,
+    "automaticallyMergePR": false,
     "dryRun": {
       "enable": false,
       "folderName": ""
@@ -22,7 +22,7 @@
     "rateLimit": 4999
   },
   "upload": {
-    "behavior": "yaml",
+    "behavior": "obsidian",
     "defaultName": "",
     "rootFolder": "content/posts",
     "yamlFolderKey": "category",
@@ -31,7 +31,13 @@
       "key": "title"
     },
     "replaceTitle": [],
-    "replacePath": [],
+    "replacePath": [
+      {
+        "regex": "^blogs/",
+        "replacement": "",
+        "type": "path"
+      }
+    ],
     "autoclean": {
       "includeAttachments": false,
       "enable": false,
@@ -86,7 +92,7 @@
     }
   },
   "plugin": {
-    "shareKey": "published",
+    "shareKey": "share",
     "fileMenu": true,
     "editorMenu": true,
     "excludedFolder": [

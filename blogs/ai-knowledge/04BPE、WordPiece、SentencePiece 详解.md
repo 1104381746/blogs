@@ -1,9 +1,9 @@
 ---
-title: "BPE、WordPiece、SentencePiece 详解"
-aliases:
-slug: "bpe-wordpiece-sentencepiece-xiang-jie"
-source: https://blogs.luhg.cn/archives/bpe-wordpiece-sentencepiece-xiang-jie
+published: true
+title: BPE、WordPiece、SentencePiece 详解
 tags:
+  - AI
+  - 分词
 categories:
   - AI知识
 ---

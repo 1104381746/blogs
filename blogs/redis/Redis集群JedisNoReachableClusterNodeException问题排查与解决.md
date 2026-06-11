@@ -1,9 +1,10 @@
 ---
-title: "Redis集群JedisNoReachableClusterNodeException问题排查与解决"
-aliases:
-slug: "redisji-qun-jedisnoreachableclusternodeexceptionwen-ti-pai-cha-yu-jie-jue"
-source: https://blogs.luhg.cn/archives/redisji-qun-jedisnoreachableclusternodeexceptionwen-ti-pai-cha-yu-jie-jue
+published: true
+title: Redis集群JedisNoReachableClusterNodeException问题排查与解决
 tags:
+  - Redis
+  - Jedis
+  - 集群
 categories:
   - Redis
 ---

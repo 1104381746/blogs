@@ -1,3 +1,13 @@
+---
+published: true
+title: Claude Code 进阶：权限控制与配置
+tags:
+  - Claude Code
+  - AI工具
+categories:
+  - AI工具
+---
+
 # Claude Code 进阶：权限控制与配置
 
 > 本文是 Claude Code 系列博客的第 3 篇，深入讲解 Claude Code 的权限控制系统、运行模式配置以及个性化定制方法。掌握这些内容能帮你安全高效地使用 Claude Code。

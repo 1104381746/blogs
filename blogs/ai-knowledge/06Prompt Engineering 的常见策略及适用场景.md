@@ -1,12 +1,13 @@
 ---
-title: "Prompt Engineering 的常见策略及适用场景"
-aliases:
-slug: "prompt-engineering-de-chang-jian-ce-lue-ji-gua-yong-chang-jing"
-source: https://blogs.luhg.cn/archives/prompt-engineering-de-chang-jian-ce-lue-ji-gua-yong-chang-jing
+published: true
+title: Prompt Engineering 的常见策略及适用场景
 tags:
+  - 提示词工程
+  - AI
 categories:
   - AI知识
 ---
+
 # Prompt Engineering：如何让 LLM 说出你真正想要的话
 
 > 模型还是那个模型，但问法不同，答案天差地别。

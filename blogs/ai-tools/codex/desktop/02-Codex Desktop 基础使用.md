@@ -1,3 +1,13 @@
+---
+published: true
+title: 基础篇：Codex 日常使用 — 对话、代码生成与文件操作
+tags:
+  - Codex Desktop
+  - AI工具
+categories:
+  - AI工具
+---
+
 # 基础篇：Codex 日常使用 — 对话、代码生成与文件操作
 
 > 系列第二篇。装好了 Desktop App，现在来学怎么真正用起来。读完这篇你会掌握：和 Codex 高效对话的方法、让它帮你写代码并把结果写进文件、以及用内置终端完成日常任务。

@@ -1,3 +1,13 @@
+---
+published: true
+title: 入门篇：Codex Desktop App 安装与初次体验
+tags:
+  - Codex Desktop
+  - AI工具
+categories:
+  - AI工具
+---
+
 # 入门篇：Codex Desktop App 安装与初次体验
 
 > 面向新手的 Codex Desktop App 系列第一篇。读完本文，你会知道桌面版和命令行版有什么区别、怎么装、装完后第一件事该做什么。

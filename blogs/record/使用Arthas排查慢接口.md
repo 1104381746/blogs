@@ -1,9 +1,10 @@
 ---
-title: "使用Arthas排查慢接口"
-aliases:
-slug: "shi-yong-arthaspai-cha-man-jie-kou"
-source: https://blogs.luhg.cn/archives/shi-yong-arthaspai-cha-man-jie-kou
+published: true
+title: 使用Arthas排查慢接口
 tags:
+  - Java
+  - Arthas
+  - 排查
 categories:
   - 记录
 ---

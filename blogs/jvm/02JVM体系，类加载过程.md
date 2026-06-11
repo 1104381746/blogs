@@ -1,9 +1,10 @@
 ---
-title: "JVM体系，类加载过程"
-aliases:
-slug: "jvmti-xi-lei-jia-zai-guo-cheng"
-source: https://blogs.luhg.cn/archives/jvmti-xi-lei-jia-zai-guo-cheng
+published: true
+title: JVM体系，类加载过程
 tags:
+  - Java
+  - JVM
+  - 类加载
 categories:
   - JVM
 ---

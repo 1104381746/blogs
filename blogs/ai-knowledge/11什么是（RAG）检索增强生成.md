@@ -1,12 +1,13 @@
 ---
-title: "什么是（RAG）检索增强生成"
-aliases:
-slug: "shi-me-shi-rag-jian-suo-zeng-qiang-sheng-cheng"
-source: https://blogs.luhg.cn/archives/shi-me-shi-rag-jian-suo-zeng-qiang-sheng-cheng
+published: true
+title: 什么是（RAG）检索增强生成
 tags:
+  - RAG
+  - AI
 categories:
   - AI知识
 ---
+
 # 什么是 RAG？一个例子让你彻底搞懂
 
 > 大模型很聪明，但它有两个“硬伤”：不知道新知识，还会编瞎话。

@@ -1,9 +1,9 @@
 ---
-title: "Transformer 核心组件拆解"
-aliases:
-slug: "transformer-he-xin-zu-jian-chai-jie"
-source: https://blogs.luhg.cn/archives/transformer-he-xin-zu-jian-chai-jie
+published: true
+title: Transformer 核心组件拆解
 tags:
+  - Transformer
+  - AI
 categories:
   - AI知识
 ---

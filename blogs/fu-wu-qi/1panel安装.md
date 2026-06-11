@@ -1,9 +1,10 @@
 ---
-title: "1panel安装"
-aliases:
-slug: "1panelan-zhuang"
-source: https://blogs.luhg.cn/archives/1panelan-zhuang
+published: true
+title: 1panel安装
 tags:
+  - 1Panel
+  - 运维
+  - 服务器
 categories:
   - 服务器
 ---

@@ -1,3 +1,13 @@
+---
+published: true
+title: Codex 进阶：权限控制与配置
+tags:
+  - Codex CLI
+  - AI工具
+categories:
+  - AI工具
+---
+
 # Codex 进阶：权限控制与配置
 
 > 本文是 Codex CLI 系列博客的第 3 篇，将深入讲解 Codex 的权限控制系统、运行模式配置以及个性化定制方法。掌握这些内容能让你在安全性和便利性之间找到最佳平衡。

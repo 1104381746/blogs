@@ -1,3 +1,13 @@
+---
+published: true
+title: 进阶篇：Skills、自动化与多线程协作
+tags:
+  - Codex Desktop
+  - AI工具
+categories:
+  - AI工具
+---
+
 # 进阶篇：Skills、自动化与多线程协作
 
 > 系列第三篇。到了这里，你已经不是新手了。现在来解锁 Desktop App 最核心的高级能力：用 Skills 扩展 Codex 的知识和技能、设置自动化让它替你值班、同时开多个对话并行干活。这三样东西 CLI 版本基本做不到，是 Desktop App 的独门功夫。

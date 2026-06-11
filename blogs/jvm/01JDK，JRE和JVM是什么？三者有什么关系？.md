@@ -1,9 +1,11 @@
 ---
-title: "JDK，JRE和JVM是什么？三者有什么关系？"
-aliases:
-slug: "jdk-jrehe-jvmshi-shi-me-san-zhe-you-shi-me-guan-xi"
-source: https://blogs.luhg.cn/archives/jdk-jrehe-jvmshi-shi-me-san-zhe-you-shi-me-guan-xi
+published: true
+title: JDK，JRE和JVM是什么？三者有什么关系？
 tags:
+  - Java
+  - JVM
+  - JDK
+  - JRE
 categories:
   - JVM
 ---

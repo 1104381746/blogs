@@ -1,9 +1,8 @@
 ---
-title: "Node.js for windows安装指南"
-aliases:
-slug: "claude-codean-zhuang-zhi-nan"
-source: https://blogs.luhg.cn/archives/claude-codean-zhuang-zhi-nan
+published: true
+title: Node.js for windows安装指南
 tags:
+  - Node.js
 categories:
   - 系统
 ---

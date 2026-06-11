@@ -1,3 +1,13 @@
+---
+published: true
+title: Codex 基础使用：交互模式与核心命令
+tags:
+  - Codex CLI
+  - AI工具
+categories:
+  - AI工具
+---
+
 # Codex 基础使用：交互模式与核心命令
 
 > 本文是 Codex 系列博客第 2 篇，介绍 Codex CLI 的交互模式、核心命令及日常使用技巧。

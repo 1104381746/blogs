@@ -1,3 +1,13 @@
+---
+published: true
+title: OpenAI Codex 入门指南：安装与环境配置
+tags:
+  - Codex CLI
+  - AI工具
+categories:
+  - AI工具
+---
+
 # OpenAI Codex 入门指南：安装与环境配置
 
 > OpenAI Codex 是 OpenAI 推出的轻量级编程助手，直接在终端运行，支持代码补全、文件编辑、命令执行等功能。本文是系列博客第一篇，带你快速上手 Codex。

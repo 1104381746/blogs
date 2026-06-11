@@ -1,12 +1,13 @@
 ---
-title: "RAG的核心"
-aliases:
-slug: "rag-de-he-xin"
-source: https://blogs.luhg.cn/archives/rag-de-he-xin
+published: true
+title: RAG的核心
 tags:
+  - RAG
+  - AI
 categories:
   - AI知识
 ---
+
 # RAG 完全指南：从核心原理到高级技术
 
 > RAG 让大模型从“闭卷考试”变成“开卷考试”。

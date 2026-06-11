@@ -1,3 +1,13 @@
+---
+published: true
+title: Claude Code 基础使用：交互模式与核心命令
+tags:
+  - Claude Code
+  - AI工具
+categories:
+  - AI工具
+---
+
 # Claude Code 基础使用：交互模式与核心命令
 
 > 本文是 Claude Code 系列博客第 2 篇，介绍 Claude Code 的交互模式、核心命令及日常使用技巧。

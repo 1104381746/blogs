@@ -1,7 +1,7 @@
 {
   "remoteURL": "https://github.com/1104381746/blogs.git",
   "gitLocation": "",
-  "syncinterval": 720,
+  "syncinterval": 43200,
   "isSyncOnLoad": true,
   "checkStatusOnLoad": true,
   "noticeLevel": "ALL",

@@ -1,3 +1,13 @@
+---
+published: true
+title: Codex 实战：项目应用案例
+tags:
+  - Codex CLI
+  - AI工具
+categories:
+  - AI工具
+---
+
 # Codex 实战：项目应用案例
 
 > 本文是 Codex CLI 系列博客的第 4 篇，将通过多个真实项目场景，展示如何在日常开发中高效使用 Codex。从代码重构到自动化测试，从文档编写到问题排查，覆盖你最可能遇到的开发任务。

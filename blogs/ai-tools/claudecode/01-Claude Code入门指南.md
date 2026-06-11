@@ -1,3 +1,16 @@
+---
+published: true
+
+title: Claude Code 入门指南：安装与环境配置
+tags:
+  - Claude Code
+  - AI工具
+  - Node.js
+categories:
+  - AI工具
+
+---
+
 # Claude Code 入门指南：安装与环境配置
 
 > Claude Code 是 Anthropic 推出的终端编程助手，直接在终端运行，提供代码生成、文件编辑、命令执行等功能。本文是系列博客第一篇，带你快速上手 Claude Code。

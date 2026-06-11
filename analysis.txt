@@ -1,0 +1,14 @@
+﻿python : <string>:20: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Di
+d you mean "\\m"? A raw string is also an option.
+所在位置 行:2 字符: 1
++ python -c "
++ ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (<string>:20: Sy...also an option.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+<string>:20: SyntaxWarning: "\m" is an invalid escape sequence. Such sequences will not work in the future. Did you mea
+n "\\m"? A raw string is also an option.
+  File "<string>", line 43
+    if line.startswith('\\\') and not in_code:
+                       ^
+SyntaxError: unterminated string literal (detected at line 43); perhaps you escaped the end quote?

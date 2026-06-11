@@ -1,0 +1,46 @@
+## 5. 个人 Settings
+
+点右上角头像 → **Settings**，进入个人设置页面。
+
+
+
+![Settings / Profile 设置页面](https://img.luhg.cn/2026/06/github-settings-profile.svg)
+*左侧导航栏包含 Profile / Account / Appearance / Emails / Notifications 等，右侧是个人信息表单*
+
+### ① Profile（个人信息）
+
+| 字段 | 作用 | 建议 |
+|------|------|------|
+| **Profile photo** | 头像 | 上传一张你的照片或喜欢的头像 |
+| **Name** | 显示名称 | 真实姓名或昵称 |
+| **Bio** | 个人简介 | 一句话介绍（如"后端开发，正在学 GitHub"）|
+| **URL** | 个人网站 | 如果有博客填这里 |
+| **Company** | 公司 | 可选 |
+| **Location** | 位置 | 可选 |
+
+### ② Account（账号安全）
+
+> ⚠️ **风险提示**：这部分涉及账号安全，请仔细阅读。
+
+- **Change password**：修改密码
+- **Two-factor authentication（2FA）**：**强烈建议开启**。开启后除了密码还要输入验证码
+- **Primary email**：主邮箱
+
+### ③ Emails（邮箱管理）
+
+> 💡 勾上 **Keep my email address private** 可以保护隐私。
+
+### ④ Appearance（外观设置）
+
+| 选项 | 效果 |
+|------|------|
+| **Light** | 亮色主题（默认）|
+| **Dark** | 暗色主题（护眼）|
+| **Auto** | 跟随系统设置 |
+
+### ⑤ Notifications（通知设置）
+
+控制 GitHub 什么时候给你发邮件/推送。默认会被通知轰炸的话，可以把 **Email notification preference** 改成 **Only on participating**。
+
+---
+

@@ -1,9 +1,9 @@
 ---
-title: "IntelliJ IDEA激活教程"
-aliases:
-slug: "intellij-ideaji-huo-jiao-cheng"
-source: https://blogs.luhg.cn/archives/intellij-ideaji-huo-jiao-cheng
+published: true
+title: IntelliJ IDEA激活教程
 tags:
+  - IntelliJ IDEA
+  - 激活
 categories:
   - 系统
 ---

@@ -1,9 +1,8 @@
 ---
-title: "Markdown 基础使用教程"
-aliases:
-slug: "markdowmji-chu-shi-yong-jiao-cheng"
-source: https://blogs.luhg.cn/archives/markdowmji-chu-shi-yong-jiao-cheng
+published: true
+title: Markdown 基础使用教程
 tags:
+  - Markdown
 categories:
   - 工具
 ---
