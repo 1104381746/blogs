@@ -1,5 +1,5 @@
 ---
-date: 2026-06-11
+date: 2026-06-09
 is_published: true
 title: 入门篇：Codex Desktop App 安装与初次体验
 tags:

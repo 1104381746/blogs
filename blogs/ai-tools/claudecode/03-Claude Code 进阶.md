@@ -1,5 +1,5 @@
 ---
-date: 2026-06-11
+date: 2026-06-09
 is_published: true
 title: Claude Code 进阶：权限控制与配置
 tags:

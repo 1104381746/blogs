@@ -1,5 +1,5 @@
 ---
-date: 2026-06-11
+date: 2026-06-09
 is_published: true
 title: 基础篇：Codex 日常使用 — 对话、代码生成与文件操作
 tags:

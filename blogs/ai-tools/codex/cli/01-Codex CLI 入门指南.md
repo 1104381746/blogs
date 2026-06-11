@@ -1,5 +1,5 @@
 ---
-date: 2026-06-11
+date: 2026-06-09
 is_published: true
 title: OpenAI Codex 入门指南：安装与环境配置
 tags:
