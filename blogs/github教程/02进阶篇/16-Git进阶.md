@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 16 · Git 进阶
 tags:
   - Git

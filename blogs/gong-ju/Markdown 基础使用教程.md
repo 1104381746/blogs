@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: Markdown 基础使用教程
 tags:
   - Markdown

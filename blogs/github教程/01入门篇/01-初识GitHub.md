@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 01 · 初识GitHub
 tags:
   - 入门

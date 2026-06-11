@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 什么是Self-Attention
 tags:
   - AI

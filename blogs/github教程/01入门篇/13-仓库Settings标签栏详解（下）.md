@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 13 · 仓库 Settings（下）
 tags:
   - Settings

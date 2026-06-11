@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 使用Arthas排查慢接口
 tags:
   - Java

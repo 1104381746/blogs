@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: BPE、WordPiece、SentencePiece 详解
 tags:
   - AI

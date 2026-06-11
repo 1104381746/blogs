@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: JDK，JRE和JVM是什么？三者有什么关系？
 tags:
   - Java

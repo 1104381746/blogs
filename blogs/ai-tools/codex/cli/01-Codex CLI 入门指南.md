@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: OpenAI Codex 入门指南：安装与环境配置
 tags:
   - Codex CLI

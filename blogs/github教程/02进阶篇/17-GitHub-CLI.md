@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 17 · GitHub CLI 入门
 tags:
   - CLI

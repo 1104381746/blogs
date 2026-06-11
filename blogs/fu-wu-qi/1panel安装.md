@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 1panel安装
 tags:
   - 1Panel

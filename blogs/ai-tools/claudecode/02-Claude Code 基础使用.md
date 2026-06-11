@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: Claude Code 基础使用：交互模式与核心命令
 tags:
   - Claude Code

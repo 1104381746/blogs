@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: Codex 实战：项目应用案例
 tags:
   - Codex CLI

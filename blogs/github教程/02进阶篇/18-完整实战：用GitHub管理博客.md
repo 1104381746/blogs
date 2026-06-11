@@ -1,5 +1,5 @@
 ---
-share: true
+is_published: true
 title: 18 · 完整实战：用 GitHub 管理博客
 tags:
   - 实战
