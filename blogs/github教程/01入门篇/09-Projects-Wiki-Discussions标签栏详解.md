@@ -1,4 +1,5 @@
-﻿---
+---
+date: 2026-06-11
 is_published: true
 title: 09 · Projects、Wiki、Discussions 详解
 tags:

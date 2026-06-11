@@ -1,4 +1,5 @@
-﻿---
+---
+date: 2026-06-11
 is_published: true
 title: 15 · Git 基础与 SSH 配置
 tags:
